@@ -38,7 +38,7 @@ def main():
         if len(country_code) == 2:
             d.save_tweet_country_code(tweet_id, country_code)
     
-    Helper.printline(f"loctaion from dictionary: {u.from_dict_cnt}, from geopy: {u.from_geopy_cnt}")        
+    Helper.printline(f"Location from dictionary: {u.from_dict_cnt}, from geopy: {u.from_geopy_cnt}")        
     Helper.printline(f"All {tweet_cnt} tweets processed")        
     Helper.printline("\n** Location Ended")
 
