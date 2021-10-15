@@ -34,7 +34,9 @@ def main():
             continue
         
         country_code = u.locator(user_location) 
-     
+        if country_code == None:
+            continue
+        
         if len(country_code) == 2:
             d.save_tweet_country_code(tweet_id, country_code)
     
